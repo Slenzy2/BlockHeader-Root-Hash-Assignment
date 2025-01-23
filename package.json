@@ -1,0 +1,12 @@
+{
+  "name": "root-hash",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "dependencies": {
+    "sha256": "^0.2.0"
+  },
+  "scripts": {
+    "dev": "node index.js"
+  }
+}
