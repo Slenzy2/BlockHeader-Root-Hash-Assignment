@@ -69,10 +69,16 @@ function combineHashes(hashMap) {
 }
 
 // Test cases
-const transactions = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i'];
-console.log(createBlockHash(transactions));
-// console.log('Single value tests:');
-// console.log(createHash('hello'));
+console.log('Single value tests:');
+console.log(createHash('hello'));
 
-// console.log('\nTwo value tests:');
-// console.log(createHash('hello', 'world')); // Strings
+console.log('\nTwo value tests:');
+console.log(createHash('hello', 'world'));
+
+console.log('\nBlock Hash tests for odd number of transactions:');
+const oddTransactions = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i'];
+console.log(createBlockHash(oddTransactions));
+
+console.log('\nBlock Hash tests for even number of transactions:');
+const evenTransactions = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j'];
+console.log(createBlockHash(evenTransactions));
